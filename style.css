@@ -471,16 +471,16 @@ form input[type=button]{
     html{
         font-size: 50%;
     }
-    #btn-mobile{
+    /* #btn-mobile{
         display: block;
         color: rgb(74, 74, 74);
         font-weight: bold;
-    }
+    } */
     #menu{
         display: block;
         position: absolute;
         width: 100%;
-        top: 60px;
+        top: 7.0rem;
         right: 0px;
         background: linear-gradient(to bottom, white 50%, #ea5337 100%); 
         transition: .6s;
@@ -490,7 +490,7 @@ form input[type=button]{
         overflow-y: hidden;
     }
     #nav.active #menu{
-        height: calc(100vh - 40px);
+        height: calc(100vh - 7.0rem);
         visibility: visible;
         overflow-y: auto;
 
@@ -506,6 +506,9 @@ form input[type=button]{
         font-size: 1.6rem;
         border: none;
         background: none;
+        color: rgb(74, 74, 74);
+        font-weight: bold;
+        gap: 0.5rem;
         cursor: pointer;
     }
     #hamburger{
@@ -520,6 +523,7 @@ form input[type=button]{
         height: 2px;
         background: currentColor;
         margin-top: 5px;
+        transition: 0.3s;
         position: relative;
     }
     #nav.active #hamburger{
