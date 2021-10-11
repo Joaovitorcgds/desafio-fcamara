@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Orange Juice</title>
+    
+</head>
+<body>
+    <header id="header">
+        <a id= "logo" href="index.html" class="aHeader">
+            <img src="assets/favicon.png" alt="logo" id="img-logo" > 
+            Orange Juice
+        </a>
+           <nav id="nav">
+               <button  aria-label = "abrir" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                   <span id="hamburger"></span>
+               </button>
+               <ul id="menu" role="menu">
+                    <li><a href="#sectPodcast" class="aHeader">Podcast</a></li>
+                    <li><a href="#sectTalks" class="aHeader">Orange talks</a></li>
+                    <li><a href="#sectInscreva-se" class="aHeader">Inscreva-se</a></li>
+               </ul>
+           </nav>
+    </header>
+    
+    <main>
+        <section id= "sectDescricao">
+            <div class="descricao">
+                <h1 class="h1Descriçao">Fala meu povo!</h1>
+                <p class="pDescriçao">Esse é o Orange Juice, feito para você que está começando uma carreira na área de tecnologia, dando dicas, compartilhando conhecimento e experiências, e te deixar mais preparado para essa jornada.</p>
+            </div>
+        </section>
+        <section id = "sectPodcast">
+            <h2 class="tituloPodcast">Podcast</h2>
+            <p class="subtituloPodcast">Acompanhe os nosso podcast mais recentes abaixo onde falamos de investimento, UX e carreira.</p>
+
+            <div class="ultimosPodcast">
+                <div class="podcast">
+                    <a href="https://www.youtube.com/watch?v=q8EKR7a9xV4&list=PLn9-AyVYB5GMbiG_7MerXuA6Hv1TChAbE&index=12">
+                        <img src="https://i.ytimg.com/vi/q8EKR7a9xV4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBldTeCGp3mUShPscYhFdmHVbOcOg" alt="podcast#14" class="imgPodcast">
+                        <div class="podcastDescricao">
+                            <h3>Investir em tecnologia é investir em qualidade - com Evandro Alves</h3>
+                            <p>Durante a conversa, Evandro vai revelar quais são os maiores desafios da empresa e as principais ferramentas que auxiliam no atendimento ao cliente. Além disso, também vai explicar como as inovações tecnológicas podem gerar valor e impulsionar os resultados da empresa. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="podcast">
+                    <a href="https://www.youtube.com/watch?v=12QnyGevxp8&list=PLn9-AyVYB5GMbiG_7MerXuA6Hv1TChAbE&index=13">
+                        <img src="https://i.ytimg.com/vi/12QnyGevxp8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD5DuDWdX4r9DazrnGR3PgBwjkHGQ" alt="podcast#15" class="imgPodcast">
+                        <div class="podcastDescricao">
+                            <h3>UX: a experiência além do design - com Carla, Lucas e Grazielen</h3>
+                            <p>Neste episódio do Orange Juice Cast, converso com Carla Mendanha, Lucas Lopes e Grazielen Fernandes, UX Designers na FCamara. Eles explicam como a experiência em vários setores de trabalho é importante para essa profissão, revelam detalhes sobre o Programa de Formação e dão algumas dicas em relação ao trabalho de UX. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="podcast">
+                    <a href="https://www.youtube.com/watch?v=y6oYQBM8HVU&list=PLn9-AyVYB5GMbiG_7MerXuA6Hv1TChAbE&index=14&t=84s">
+                        <img src="https://i.ytimg.com/vi/y6oYQBM8HVU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLABpF1kvVfZjFp22f9_h9wab6YNow" alt="podcast#16" class="imgPodcast">
+                        <div class="podcastDescricao">
+                            <h3>O que você faz pelo desenvolvimento da sua carreira? - com Luiz Menzani</h3>
+                            <p>Neste episódio do Orange Juice Cast, recebo Luiz Antonio Menzani, Gestor de TI no C6 Bank. Luiz conta como suas experiências como desenvolvedor o ajudaram na gestão de pessoas, e a importância das habilidades comportamentais no mercado de trabalho.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="btn-podcast">
+                <a href="https://www.youtube.com/playlist?list=PLn9-AyVYB5GMbiG_7MerXuA6Hv1TChAbE" target="_blank" ><input type="submit" name="botao" value="Veja mais" class="botaoPodcast"/></a>
+            </div>
+        </section>
+        <section id="sectTalks" onload="mobileCarrossel()">
+            <h2 class="tituloTalks">Orange talks</h2>
+            <p class="subtituloTalks">O Orange Talks é onde batemos-papo em volta do conhecimento, seja ele técnico ou não, para ter a troca de experiência e discussão sobre vários assuntos no mundo da tecnologia.</p>
+            <div class="carrosselDivs">
+                <div id="voltar" class="btnCarrossel" onclick="backDiv()"> < </div>
+                <div id="avancar" class="btnCarrossel" onclick="nextDiv()"> > </div>
+
+                <div class="talks selected">
+                    <a href="https://www.youtube.com/watch?v=UDUetBEMgB8&list=PLn9-AyVYB5GPCTScmAU3Vbl4UkFJsdFHy&index=8">
+                        <img src="https://i.ytimg.com/vi/UDUetBEMgB8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC7mkApafXmTNN2dPT9Tn_Fhk7KlA" alt="talks#8" class="imgTalks">
+                        <div class="talksDescricao">
+                            <h3>Introdução ao Docker - com João Guilherme</h3>
+                            <p>João Guilherme, desenvolvedor no Grupo FCamara, traz nessa Orange Talks sobre como utilizar o Docker para melhorar ainda mais sua forma de fazer aplicações.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="talks selected">
+                    <a href="https://www.youtube.com/watch?v=hDIzghGjkF4&list=PLn9-AyVYB5GPCTScmAU3Vbl4UkFJsdFHy&index=10">
+                        <img src="https://i.ytimg.com/vi/hDIzghGjkF4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCzcnqZHrklbjPpnzSanfdImJej1w" alt="talks#10" class="imgTalks">
+                        <div class="podcastDescricao">
+                            <h3>Orientação à objetos - com Eloisa de Oliveira</h3>
+                            <p>A Eloisa de Oliveira, desenvolvedora e sukimer (participante da nossa comunidade no Discord), bateu um papo sobre o paradigma da Orientação a Objetos</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="talks">
+                    <a href="https://www.youtube.com/watch?v=TGBj-wJTKFY&list=PLn9-AyVYB5GPCTScmAU3Vbl4UkFJsdFHy&index=9">
+                        <img src="https://i.ytimg.com/vi/TGBj-wJTKFY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAHZpSi4zg_uQ7WNlDpVEFik4OwgQ" alt="talks#9" class="imgTalks">
+                        <div class="talksDescricao">
+                            <h3>Vamos falar sobre Scrum? - com Mauricio Varela e Vinicius Batista</h3>
+                            <p>Bora falar sobre metodologia ágil? Ou melhor, sobre Scrum? Trouxemos dois Scrums Masters do Grupo FCamara, Mauricio e Vinicius (vulgo Gigante), para bater um papo sobre o Scrum, sobre suas diferenças com outras metodologias e como isso pode ajudar em um projeto.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="talks">
+                    <a href="https://www.youtube.com/watch?v=kTLi3RAMnS4&list=PLn9-AyVYB5GPCTScmAU3Vbl4UkFJsdFHy&index=11&t=1928s">
+                        <img src="https://i.ytimg.com/vi/kTLi3RAMnS4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAHwXkDFLz2mFi3smfKhxQgQHQzQA" alt="talks#11" class="imgTalks">
+                        <div class="talksDescricao">
+                            <h3>O que é esse tal Design System? - com Carla Mendanha</h3>
+                            <p>A talks dessa vez fugiu do assunto de programação, mas veio para falar de algo tão importante quanto: um Design System! A Product Designer do Grupo FCamara, Carla Mendanha, trouxe nessa talks o que de fato é um Design System e a sua impotância dentro de um projeto.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="btn-talks">
+                <a href="https://www.youtube.com/playlist?list=PLn9-AyVYB5GPCTScmAU3Vbl4UkFJsdFHy" target="_blank" ><input type="submit" name="botao" value="Veja mais" class="botaoTalks"/></a>
+            </div>
+        </section>
+        <section id="sectInscreva-se">
+            <div class="boxInscreva-se">
+                <h1>Faça sua inscrição e seja notificado toda vez que sair um conteúdo novo.</h1>
+                <div id="btnInsreva-se">
+                    <input type="submit" name="botao" value="Inscreva-se" class="botaoInscreva-se"/>
+                </div>
+                <h2>E siga-nos nas nossas redes sociais</h2>
+                
+                <div class="redeSocial">
+                    <div>
+                        <a href="https://open.spotify.com/show/5zy6DpF8V3N8rBbWO7OE79" target="_blank">
+                        <img src="assets/spotify.jpg" alt="spotify" class="icon">Spotify</a>
+                    </div> 
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCQWG9_9bap_FmKKX5LUHD5g" target="_blank">
+                        <img src="assets/youtube.jpg" alt="youtube" class="icon">Youtube</a>
+                    </div>
+                    <div>
+                        <a href="https://twitch.tv/orangejuicefc" target="_blank">
+                        <img src="assets/twitch.jpg" alt="twitch" class="icon">Twitch</a>
+                    </div>   
+                    <div>
+                        <a href="https://www.instagram.com/orangejuicefc/" target="_blank">
+                        <img src="assets/instagram.jpg" alt="instagram" class="icon">Instagram</a>
+                    </div>  
+                </div>
+            </div>
+            <div id="modal-inscreva" class="modal-container">
+                <div class="modal">
+                    <button class="fechar">x</button>
+                    <h3>Inscreva-se e fique por dentro das novidades.</h3>
+                    <form>
+                        <p>Nome</p>
+                        <input type="text" name="name" class="name" placeholder="Nome">
+                        <p>Email</p>
+                        <input type="email" name="email" class="email" placeholder="Email">
+                        <input type="button" class="btnModal" value="Inscreva-se" onclick="enviar()">
+                        <p class="resposta"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
