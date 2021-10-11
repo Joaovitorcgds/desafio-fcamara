@@ -130,7 +130,6 @@ function enviar(){
 
     if(inputName != "" && inputEmail != ""){ 
         resposta.innerHTML = "Parabéns!!! Mas por enquanto esse modal não envia informação."
-        resposta.classList.add("error")
         
     }else{
         resposta.innerHTML = "Preencha todos os campos"
