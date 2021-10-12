@@ -156,13 +156,14 @@
     background-color: #4b4fa1;
     margin-top: 3.0rem;
     padding: 3.0rem;
-    color: white;
+    color: white; 
+    position: relative;
 }
 .carrosselDivs{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+   
 
 }
 .btnCarrossel{
@@ -185,10 +186,12 @@
 }
 #voltar{
     display: none;
-    left: 2%;
+    top: 50%;
+    left: 4%;
 }
 #avancar{
-    right: 2%;
+    top: 50%;
+    right: 4%;
 }
 .tituloTalks{
     font-size: 3.5rem;
@@ -456,6 +459,13 @@ form input[type=button]{
     .descHeader{
         max-width: 450px;
     }
+    #voltar{
+        display: none;
+        left: 2%;
+    }
+    #avancar{
+        right: 2%;
+    }
     
 }
 
@@ -471,11 +481,7 @@ form input[type=button]{
     html{
         font-size: 50%;
     }
-    /* #btn-mobile{
-        display: block;
-        color: rgb(74, 74, 74);
-        font-weight: bold;
-    } */
+
     #menu{
         display: block;
         position: absolute;
@@ -583,6 +589,14 @@ html{
     max-width: 280px;
 }
 
+#voltar{
+    display: none;
+    left: 6%;
+}
+#avancar{
+    right: 6%;
+}
+
 }
 
 @media (max-width: 425px){
@@ -606,6 +620,14 @@ html{
     .botaoPodcast, .botaoTalks, .botaoInscreva-se{
         max-width: 250px;
     }
+    #voltar{
+        display: none;
+        left: 4%;
+    }
+    #avancar{
+        right: 4%;
+    }
+
     .boxInscreva-se{
         max-width: 250px; 
      }
